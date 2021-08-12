@@ -9,14 +9,16 @@ Created on Wed Aug 11 18:26:00 2021
 Defines a functions for training a NN.
 """
 
-from audio_explorer import AudioExplorer
 import _pickle as pickle
-from tensorflow import keras
-from keras import backend as K
-from keras.models import Model
-from keras.layers import (Input, Lambda)
-from keras.optimizers import SGD
-from keras.callbacks import ModelCheckpoint   
+from tensorflow.python.keras.layers.normalization import LayerNormalization
+from keras.backend import set_session
+import tensorflow as tf
+#from tensorflow import keras
+from tensorflow.python.keras import backend 
+from tensorflow.python.keras.models import Model
+from tensorflow.python.keras.layers import (Input, Lambda)
+from tensorflow.keras.optimizers import *
+from tensorflow.python.keras.callbacks import ModelCheckpoint   
 import os
 
 def ctc_lambda_func(args):

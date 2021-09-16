@@ -1,7 +1,8 @@
-The World Food Program wants to deploy an intelligent form that collects nutritional information of food bought and sold at markets in two different countries in Africa - Ethiopia and Kenya. This project attempts to create a web app that does just that. It will allow users to register the list of items they bought using just their voice. This project utilizes deep learning models, Which are capable of transcribing a speech to text and deliver speech-to-text technology for the choosen two African languages: Amharic and Swahili.
-In this work we did amharic speech recognition and feature will do Swahili speech recognition.
+# Introduction 
 
-Project Structure
+The World Food Program wants to deploy an intelligent form that collects nutritional information of food bought and sold at markets in two different countries in Africa - Ethiopia and Kenya. This project attempts to create a web app that does just that. It will allow users to register the list of items they bought using just their voice. This project utilizes deep learning models, Which are capable of transcribing a speech to text and deliver speech-to-text technology for the choosen two African languages: Amharic and Swahili. In this work we did amharic speech recognition and feature will do Swahili speech recognition.
+
+# Project Structure
 
 Data
 
@@ -15,9 +16,7 @@ Target labels (y): a text transcript of what was spoken
 
 Requirements
 
-Pytorch/Tensorflow ,
-
-librosa, scikit-learn, Python,
+Pytorch/Tensorflow , librosa, scikit-learn, Python,
 
 Model Architecture
 
@@ -25,21 +24,21 @@ CNN (Convolutional Neural Network) plus RNN-based (Recurrent Neural - Network) a
 
 RNN-based sequence-to-sequence network
 
-Tasks:
+# Tasks:
 
- Setting up DVC and MLflow
+ - Setting up DVC and MLflow
  
- Exploring the data and Extracting useful information
+ - Exploring the data and Extracting useful information
  
- Preprocessing and Augmenting the data
+ - Preprocessing and Augmenting the data
  
- Extracting features
+-  Extracting features
  
- Modelling and Deployment using MLOps
+ - Modelling and Deployment using MLOps
  
- Serving predictions on a web interface
+ - Serving predictions on a web interface
  
-Current Status
+# Current Status
 
 Integrating Preprocessing and Augmentation to the code base
 
@@ -47,7 +46,7 @@ Coming Changes
 
 Modelling and Deployment using MLOps
 
-Reference
+# Reference
 
 https://towardsdatascience.com/audio-deep-learning-made-simple-automatic-speech-recognition-asr-how-it-works-716cfce4c706 https://www.kaggle.com/CVxTz/audio-data-augmentation
 
